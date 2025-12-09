@@ -1,240 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Israel First — A party platform focused on sovereignty, affordable housing, domestic labor, and national industry." />
-  <meta name="keywords" content="Israel, Israel First, political party, platform, sovereignty, housing, annexation, labor, hi-tech, manufacturing" />
-  <title>Israel First — Building a Strong, Sovereign, Prosperous Israel</title>
-  <style>
-    :root{
-      --accent:#0b5f3e;
-      --accent-dark:#084a31;
-      --muted:#6b7280;
-      --bg:#ffffff;
-      --card:#f8fafc;
-      --max-width:1100px;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Israel First – Our Plan to Put Citizens First</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #222;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:linear-gradient(180deg,#ffffff 0%, #f7fafb 100%);color:#0f172a}
-    a{color:var(--accent)}
-    .container{max-width:var(--max-width);margin:0 auto;padding:28px}
-
-    header.site-header{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-dark));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}
-    .site-title{font-size:18px;font-weight:700}
-    nav.site-nav{display:flex;gap:12px;align-items:center}
-    nav.site-nav a{padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--accent-dark);font-weight:600}
-    .cta{background:var(--accent);color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
-
-    /* Hero */
-    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:40px 0}
-    .hero h1{font-size:34px;margin:0 0 12px}
-    .hero p{margin:0 0 18px;color:var(--muted);font-size:16px}
-    .hero .buttons{display:flex;gap:12px}
-
-    /* Cards */
-    .grid-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(8,10,15,0.04)}
-    .card h3{margin:0 0 8px}
-    .card p{margin:0;color:var(--muted)}
-
-    /* Accordion */
-    .accordion{margin:18px 0}
-    .panel{background:white;border-radius:10px;overflow:hidden;border:1px solid #e6edf2}
-    .panel summary{list-style:none;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;font-weight:700}
-    .panel[open] summary{background:linear-gradient(90deg,#f8fafc,#ffffff)}
-    .panel div.content{padding:12px 18px;color:var(--muted);line-height:1.5}
-
-    /* Join form */
-    .join-card{background:white;padding:18px;border-radius:12px;border:1px solid #eef2f6}
-    .join-card h3{margin:0 0 10px}
-    form.join-form{display:grid;gap:10px}
-    input[type=text],input[type=email],input[type=tel],select{padding:10px;border-radius:8px;border:1px solid #dbe7ee;font-size:14px}
-    .row{display:flex;gap:10px}
-    .checkbox{display:flex;align-items:center;gap:8px}
-    button.primary{background:var(--accent);color:white;border:none;padding:12px 14px;border-radius:10px;font-weight:700;cursor:pointer}
-
-    footer.site-footer{border-top:1px solid #e6eef3;margin-top:28px;padding:18px 0;color:var(--muted);display:flex;align-items:center;justify-content:space-between}
-
-    /* Responsive */
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr;}
-      .grid-cards{grid-template-columns:repeat(2,1fr)}
+    header {
+        background-color: #003366;
+        color: #fff;
+        padding: 2rem 1rem;
+        text-align: center;
     }
-    @media (max-width:560px){
-      .grid-cards{grid-template-columns:1fr}
-      nav.site-nav{display:none}
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
     }
-
-    /* Small utilities */
-    .muted{color:var(--muted);font-size:14px}
-    .small{font-size:13px;color:#94a3b8}
-    .center{display:flex;justify-content:center;align-items:center}
-  </style>
+    section {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+    h2 {
+        color: #003366;
+        border-bottom: 2px solid #003366;
+        padding-bottom: 0.5rem;
+    }
+    ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+    }
+    .callout {
+        background-color: #ffefc1;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-left: 5px solid #ff9900;
+    }
+</style>
 </head>
 <body>
-  <div class="container">
-    <header class="site-header" role="banner">
-      <div class="brand">
-        <div class="logo" aria-hidden>IF</div>
-        <div>
-          <div class="site-title">Israel First</div>
-          <div class="small">Sovereignty • Prosperity • Sovereign Industry</div>
-        </div>
-      </div>
-      <nav class="site-nav" role="navigation" aria-label="Main">
-        <a href="#platform">Platform</a>
-        <a href="#join">Join</a>
-        <a href="#news">News</a>
-        <a class="cta" href="#join">Join Us</a>
-      </nav>
-    </header>
 
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div>
-          <h1 id="hero-title">Building a Strong, Sovereign, Prosperous Israel</h1>
-          <p>We prioritize the well-being of Israeli citizens through territorial sovereignty, affordable housing, domestic employment, and national industrial strength.</p>
-          <div class="buttons">
-            <a class="cta" href="#join">Join the Movement</a>
-            <a href="#platform">Read Our Platform</a>
-          </div>
-          <div style="margin-top:18px;color:var(--muted);font-size:14px">Founding registration documents, bylaws, and platform are available upon request for party founders.</div>
-        </div>
+<header>
+    <h1>Israel First – Our Plan to Put Citizens First</h1>
+    <p>Putting Israel and its citizens first: jobs, homes, security, and sovereignty.</p>
+</header>
 
-        <aside class="join-card" id="join">
-          <h3>Become a Founding Member</h3>
-          <p class="muted">Sign up to receive updates, volunteer, or be considered as one of the founding members when registration opens.</p>
-          <form class="join-form" id="joinForm" onsubmit="handleSubmit(event)">
-            <input type="text" id="fullName" name="fullName" placeholder="Full name" required />
-            <input type="email" id="email" name="email" placeholder="Email address" required />
-            <input type="tel" id="phone" name="phone" placeholder="Phone (optional)" />
-            <div class="row">
-              <input type="text" id="city" name="city" placeholder="City" />
-              <input type="text" id="age" name="age" placeholder="Age" />
-            </div>
-            <label class="checkbox"><input type="checkbox" id="volunteer" name="volunteer"> I want to volunteer</label>
-            <label class="checkbox"><input type="checkbox" id="founder" name="founder"> I want to be a founding member</label>
-            <button type="submit" class="primary">Join Israel First</button>
-            <div id="formMsg" class="small" style="margin-top:8px"></div>
-          </form>
-        </aside>
-      </section>
+<section>
+    <h2>1. Domestic Labor & Employment</h2>
+    <p>The backbone of Israel is its people. Big corporations and bought politicians flood our country with foreign labor, driving down wages and taking jobs from Israelis. Enough.</p>
+    <ul>
+        <li>Phase out foreign labor in sectors where Israelis are available within five years.</li>
+        <li>Create 200,000 new domestic jobs through vocational training, apprenticeships, and industrial development.</li>
+        <li>Launch a Young Immigrant Workforce Initiative: attract 50,000 young immigrants to join the labor force in the first three years.</li>
+        <li>Provide tax incentives for businesses that maintain 80%+ Israeli staff; penalize wage suppression through foreign labor.</li>
+    </ul>
+</section>
 
-      <section id="platform">
-        <div class="grid-cards" role="list">
-          <article class="card" role="listitem">
-            <h3>Territorial Sovereignty</h3>
-            <p>Apply full state sovereignty across the land between the Mediterranean and the Jordan River; unify civil and security governance under the State of Israel.</p>
-          </article>
+<section>
+    <h2>2. Housing & Generational Wealth</h2>
+    <p>Young Israelis work hard, pay rent, and still cannot afford to own a home. Meanwhile, the powerful hoard land and build overpriced apartments.</p>
+    <ul>
+        <li>Build 20,000 single-family homes in sprawling new communities across Israel & Judea & Samaria.</li>
+        <li>Grant long-term land rights for citizens in new development zones.</li>
+        <li>Launch a National Housing Fund for first-time buyers with subsidized mortgage rates.</li>
+        <li>Ensure transparent tenders and anti-speculation policies to prevent price inflation.</li>
+    </ul>
+</section>
 
-          <article class="card" role="listitem">
-            <h3>Housing & Generational Wealth</h3>
-            <p>Prioritize affordable home ownership nationwide as the foundation of family stability and generational economic security.</p>
-          </article>
-
-          <article class="card" role="listitem">
-            <h3>End Foreign Labor Dependence</h3>
-            <p>Phase out foreign labor, including PA labor, while investing in Israeli employment and vocational training.</p>
-          </article>
-
-          <article class="card" role="listitem">
-            <h3>National Industry & Hi‑Tech</h3>
-            <p>Build a sovereign defense and manufacturing sector that secures technological leadership and economic independence.</p>
-          </article>
-
-          <article class="card" role="listitem">
-            <h3>Demographic Renewal</h3>
-            <p>Encourage immigration of young adults to strengthen the workforce and sustain national growth.</p>
-          </article>
-
-          <article class="card" role="listitem">
-            <h3>Clean Government</h3>
-            <p>Independent, third‑party audits of government to expose foreign influence and protect the integrity of the state.</p>
-          </article>
-        </div>
-
-        <div class="accordion">
-          <details class="panel">
-            <summary>Territorial Sovereignty & Strategic Depth</summary>
-            <div class="content">Israel First supports full legal and administrative integration of all territories under Israeli control. This integration will provide strategic depth, coordinated infrastructure planning, and expanded opportunities for housing and economic development under unified governance.</div>
-          </details>
-
-          <details class="panel">
-            <summary>Housing & Home Ownership</summary>
-            <div class="content">Home ownership is a cornerstone of family stability and long-term wealth. The party will accelerate land release, streamline planning, and fast-track construction programs prioritized for Israeli citizens and families.</div>
-          </details>
-
-          <details class="panel">
-            <summary>Labor, Wages & Domestic Employment</summary>
-            <div class="content">We will roll out a multi-year plan to replace foreign labor with Israeli workers, increase wages in affected sectors, and deploy nationwide vocational training to ensure economic mobility.</div>
-          </details>
-
-          <details class="panel">
-            <summary>Immigration & Integration</summary>
-            <div class="content">Focused immigration of younger skilled migrants will be encouraged, with integration services that place new arrivals into work and training quickly to support national labor needs.</div>
-          </details>
-
-          <details class="panel">
-            <summary>Defense Technology & Sovereign Industry</summary>
-            <div class="content">The state will invest in advanced defense systems, manufacturing, and dual-use technologies to ensure economic resilience and strategic autonomy. Critical industries will be anchored under Israeli ownership and oversight.</div>
-          </details>
-
-          <details class="panel">
-            <summary>Independent Auditing & Foreign Influence</summary>
-            <div class="content">Independent third-party audits will review governmental activity for corruption and external influence. Findings will be public, and recommendations implemented to protect Israel’s sovereignty and public trust.</div>
-          </details>
-        </div>
-      </section>
-
-      <section id="news">
-        <h2 style="margin-top:8px">Latest</h2>
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px">
-          <article class="card">
-            <h4>Founding Conference — Date TBA</h4>
-            <p class="small">Join us to launch Israel First and begin the national renewal project. Founding members will be invited to sign formal documents.</p>
-          </article>
-          <article class="card">
-            <h4>Policy Whitepaper: Housing & Sovereignty</h4>
-            <p class="small">A technical whitepaper detailing planning reforms and housing targets is being prepared for public release.</p>
-          </article>
-        </div>
-      </section>
-
-    </main>
-
-    <footer class="site-footer">
-      <div>
-        <strong>Israel First</strong> — Sovereignty • Prosperity • Self-Reliance
-      </div>
-      <div class="muted">Contact: info@israelfirst.org • © Israel First</div>
-    </footer>
-  </div>
-
-  <script>
-    function handleSubmit(e){
-      e.preventDefault();
-      const name = document.getElementById('fullName').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const founder = document.getElementById('founder').checked;
-      const msg = document.getElementById('formMsg');
-      if(!name || !email){ msg.textContent = 'Please enter name and email.'; return }
-      msg.textContent = 'Thank you — we received your request. You will be contacted with next steps.';
-      // Basic local save for demo (not persistent)
-      try{
-        const key = 'israel_first_signups_v1';
-        const data = JSON.parse(localStorage.getItem(key) || '[]');
-        data.push({name,email,founder,timestamp:new Date().toISOString()});
-        localStorage.setItem(key, JSON.stringify(data));
-      }catch(err){ console.warn(err) }
-
-      // In production, replace with a real POST to your backend or form endpoint.
-      document.getElementById('joinForm').reset();
-      setTimeout(()=>{ msg.textContent = '' },4000);
-    }
-  </script>
-</body>
-</html>
+<section>
+    <h2>3. Economic Independence & Industrial Growth</h2>
+    <ul>
+        <li>Invest in Israeli manufacturing, agriculture, defense technologies, and industrial development.</li>
+        <li>Revive t
