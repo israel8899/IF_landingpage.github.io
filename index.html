@@ -1,219 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Israel First – Our Plan to Put Citizens First</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Israel First</title>
+  <style>
     body {
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #f4f4f4;
-        color: #222;
-        scroll-behavior: smooth;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f6f7;
+      color: #222;
+      line-height: 1.6;
     }
+
     header {
-        background-color: #003366;
-        color: #fff;
-        padding: 3rem 1rem;
-        text-align: center;
+      background: linear-gradient(135deg, #0e1a40, #1f3b73);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
     }
+
     header h1 {
-        margin: 0;
-        font-size: 3rem;
+      font-size: 3.3rem;
+      margin: 0;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
+
     header p {
-        font-size: 1.2rem;
+      font-size: 1.25rem;
+      margin-top: 10px;
+      opacity: 0.9;
     }
-    section {
-        max-width: 1000px;
-        margin: 2rem auto;
-        padding: 2rem;
-        border-radius: 10px;
-        color: #fff;
-        opacity: 0;
-        transform: translateY(50px);
-        transition: all 1s ease;
+
+    .floating-join {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #d21f3c;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 1000;
+      transition: 0.2s ease;
     }
-    section.visible {
-        opacity: 1;
-        transform: translateY(0);
+
+    .floating-join:hover {
+      background: #b81a33;
+      transform: scale(1.05);
     }
-    h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
+
+    .section {
+      padding: 60px 20px;
+      max-width: 850px;
+      margin: auto;
     }
-    h2 i {
-        margin-right: 0.5rem;
-        color: #ffdd57;
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #1f3b73;
+      padding-left: 12px;
+      font-weight: 800;
     }
-    ul {
-        list-style: disc;
-        padding-left: 2rem;
-    }
-    .join-section {
-        background-color: #ff9900;
-        color: #003366;
-        text-align: center;
-        padding: 2rem;
-        border-radius: 10px;
-        margin: 2rem auto;
-        max-width: 600px;
-    }
-    .join-section input[type="text"],
-    .join-section input[type="email"] {
-        padding: 0.7rem;
-        width: 45%;
-        margin: 0.5rem;
-        border-radius: 5px;
-        border: none;
-        font-size: 1rem;
-    }
-    .join-section button {
-        padding: 0.8rem 2rem;
-        font-size: 1rem;
-        border: none;
-        border-radius: 5px;
-        background-color: #003366;
-        color: #fff;
-        cursor: pointer;
-        margin-top: 1rem;
-    }
-    /* Section Colors */
-    .section-jobs { background-color: #1abc9c; }
-    .section-homes { background-color: #e67e22; }
-    .section-economy { background-color: #3498db; }
-    .section-sovereignty { background-color: #9b59b6; }
-    .section-security { background-color: #e74c3c; }
-    .section-foreign { background-color: #f39c12; }
-    .section-corruption { background-color: #95a5a6; }
-    .section-unity { background-color: #16a085; }
-    .section-infra { background-color: #34495e; }
-</style>
+  </style>
 </head>
+
 <body>
 
+<a href="#join" class="floating-join">Join Us</a>
+
 <header>
-    <h1>Israel First – Our Plan to Put Citizens First</h1>
-    <p>Putting Israel and its citizens first: jobs, homes, security, and sovereignty.</p>
+  <h1>Israel First</h1>
+  <p>A movement to restore sovereignty, prosperity, and national pride.</p>
 </header>
 
-<section class="section-jobs">
-    <h2><i class="fa-solid fa-briefcase"></i> Jobs for Israelis</h2>
-    <ul>
-        <li>Phase out foreign labor in key sectors</li>
-        <li>Create 200,000 new domestic jobs</li>
-        <li>Attract young immigrants to strengthen the workforce</li>
-        <li>Provide incentives for businesses hiring Israelis first</li>
-    </ul>
+<section class="section" id="problem">
+  <h2>The Problem</h2>
+
+  <h3>Loss of National Sovereignty</h3>
+  <p>- “I will not allow Israel to annex the West Bank. Nope, I will not allow it.” — Donald Trump (September 2025)</p>
+  <p>- “If they go into Rafah, I’m not supplying the weapons.” — Joe Biden (May 2024)</p>
+  <p>- “While Gaza redevelopment advances… conditions may be in place for a credible pathway to Palestinian statehood.” — Trump’s 20-Point Plan</p>
+  <p>Decisions about Israel’s borders and future are being made in foreign capitals — not in Jerusalem.</p>
+
+  <h3>Housing Crisis</h3>
+  <p>
+    - “During a discussion held by the Knesset’s Young Adults Committee, data revealed that rental prices have surged by 
+    <strong>57% over the past two decades</strong>. In Jerusalem, young adults spend nearly <strong>60% of their income</strong> on housing.”  
+    <a href="https://www.buyitinisrael.com/news/homeownership-in-israel-decline-25-of-young-adults-with-parents/?utm_source=chatgpt.com" target="_blank">Source</a>
+  </p>
+
+  <p>
+    - “According to a study by Liran Kosman of the Knesset’s Budget Control Department, among individuals aged 25–34, only 
+    <strong>15%</strong> own a home.”  
+    <a href="https://www.buyitinisrael.com/news/homeownership-in-israel-decline-25-of-young-adults-with-parents/?utm_source=chatgpt.com" target="_blank">Source</a>
+  </p>
+
+  <p>Restricted land development and overpriced housing options prevent working Israelis from achieving the dream of home ownership.</p>
+
+  <h3>Depressed Wages and a Shrinking Job Market</h3>
+  <p>- “195,000 legal foreign workers and about 33,000 illegal workers…”</p>
+  <p>- “145,700 unemployed in October 2025” — 
+    <a href="https://main.knesset.gov.il/en/news/pressreleases/pages/press27425r.aspx" target="_blank">Source</a>
+  </p>
+  <p>- OECD 2025: Median wages in Israel are below the OECD average.  
+    <a href="https://www.oecd.org/en/publications/oecd-economic-surveys-israel-2025_d6dd02bc-en/full-report/addressing-the-high-cost-of-living_bfe408a2.html?utm_source=chatgpt.com" target="_blank">Source</a>
+  </p>
+  <p>Corporations depress wages by flooding the market with cheap foreign labor — boxing Israelis out of the workforce.</p>
+
+  <h3>Never-Ending Wars</h3>
+  <p>Foreign pressure pushes ceasefires, humanitarian schemes, and political deals that trap Israel in endless conflict.</p>
 </section>
 
-<section class="section-homes">
-    <h2><i class="fa-solid fa-house"></i> Homes for Every Family</h2>
-    <ul>
-        <li>Build 20,000 single-family homes in new communities</li>
-        <li>Grant long-term land ownership for citizens</li>
-        <li>Launch a National Housing Fund for first-time buyers</li>
-        <li>Prevent speculation and monopolies</li>
-    </ul>
+<section class="section" id="roadmap">
+  <h2>Israel First Roadmap</h2>
+
+  <p><strong>🇮🇱 Restoring Sovereignty</strong><br>
+  End foreign aid dependency and diversify alliances to empower true national independence.</p>
+
+  <p><strong>🏡 Unleash Home Ownership</strong><br>
+  Annexation in Judea & Samaria unlocks millions of dunams for development, lowering prices and making full-family homes achievable again.</p>
+
+  <p><strong>💼 Strengthen the Working Class</strong><br>
+  Eliminating foreign labor revives the domestic workforce with higher wages and more opportunities.</p>
+
+  <p><strong>🛡️ Military Doctrine Overhaul</strong><br>
+  Israel fights to win — no more ceasefires, deals, hostage trades, or foreign-managed aid.</p>
+
+  <p><strong>🌍 Block Foreign Interference</strong><br>
+  End NGO manipulation and political coercion that undermines national sovereignty.</p>
+
+  <p><strong>📈 Greater Israel = Prosperity</strong><br>
+  Expansion, development, and economic growth that empowers families and provides strategic depth for national security.</p>
 </section>
 
-<section class="section-economy">
-    <h2><i class="fa-solid fa-industry"></i> Economic Independence</h2>
-    <ul>
-        <li>Invest in hi-tech, manufacturing, and defense industries</li>
-        <li>Revive the Israeli jet fighter program</li>
-        <li>Support domestic startups creating local jobs</li>
-        <li>Expand domestic agriculture for self-reliance</li>
-    </ul>
+<section class="section" id="join">
+  <h2>Join the Movement</h2>
+  <p>Be part of a national revival. Add your name and stay connected.</p>
+  <form>
+    <input type="text" placeholder="Full Name" required />
+    <input type="email" placeholder="Email" required />
+    <button type="submit">Join Israel First</button>
+  </form>
 </section>
-
-<section class="section-sovereignty">
-    <h2><i class="fa-solid fa-landmark"></i> Sovereignty & Integration</h2>
-    <ul>
-        <li>Dismantle the Palestinian Authority; unified control from Jordan River to Mediterranean</li>
-        <li>Prioritize strategic land development for security and population integration</li>
-        <li>Build railways and highways connecting all regions</li>
-        <li>Evaluate Ben Gurion Canal for trade and security</li>
-    </ul>
-</section>
-
-<section class="section-security">
-    <h2><i class="fa-solid fa-shield"></i> National Security & Defense</h2>
-    <ul>
-        <li>Build an advanced Israeli jet fighter</li>
-        <li>Expand defense tech R&D: cyber, unmanned, missile defense</li>
-        <li>Strengthen domestic military manufacturing</li>
-        <li>Coordinate national defense for critical infrastructure</li>
-    </ul>
-</section>
-
-<section class="section-foreign">
-    <h2><i class="fa-solid fa-globe"></i> Geopolitical Independence</h2>
-    <ul>
-        <li>Diversify diplomatic and trade relations</li>
-        <li>Lead a Democratic Alliance of Nations</li>
-        <li>Exclude authoritarian regimes from influence</li>
-        <li>Build partnerships with emerging powers</li>
-    </ul>
-</section>
-
-<section class="section-corruption">
-    <h2><i class="fa-solid fa-gavel"></i> Anti-Corruption & Transparency</h2>
-    <ul>
-        <li>Independent auditing of ministries and institutions</li>
-        <li>Public disclosure of foreign donations and contracts</li>
-        <li>Whistleblower protections for corruption reporting</li>
-    </ul>
-</section>
-
-<section class="section-unity">
-    <h2><i class="fa-solid fa-users"></i> National Unity</h2>
-    <ul>
-        <li>Bridge secular, religious, urban, and rural communities</li>
-        <li>Implement youth and veteran programs linking service to employment</li>
-        <li>Foster mutual respect and shared responsibility</li>
-    </ul>
-</section>
-
-<section class="section-infra">
-    <h2><i class="fa-solid fa-road"></i> Infrastructure & Connectivity</h2>
-    <ul>
-        <li>Develop railways and highways connecting all regions</li>
-        <li>Expand water, energy, and communications infrastructure</li>
-        <li>Create domestic jobs through strategic infrastructure projects</li>
-    </ul>
-</section>
-
-<section class="join-section">
-    <h2>Join Israel First Today!</h2>
-    <p>Sign up to receive updates, news, and ways to support our movement.</p>
-    <form>
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email Address" required>
-        <br>
-        <button type="submit">Join Us</button>
-    </form>
-</section>
-
-<script>
-    // Scroll animation for sections
-    const sections = document.querySelectorAll('section');
-    window.addEventListener('scroll', () => {
-        const triggerBottom = window.innerHeight / 5 * 4;
-        sections.forEach(section => {
-            const sectionTop = section.getBoundingClientRect().top;
-            if (sectionTop < triggerBottom) {
-                section.classList.add('visible');
-            }
-        });
-    });
-</script>
 
 </body>
 </html>
